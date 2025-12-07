@@ -12,41 +12,6 @@ body {
     position: relative;
 }
 
-.logo-bg {
-    position: fixed;
-    pointer-events: none;
-    opacity: 0.7; 
-    animation: float 8s infinite ease-in-out; 
-}
-
-.logo-bg:nth-child(2n) {
-    animation-duration: 10s; 
-    animation-delay: 1s;
-}
-
-.logo-bg:nth-child(3n) {
-    animation-duration: 12s;
-    animation-delay: 2s;
-}
-
-@keyframes float {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    25% {
-        transform: translate(10px, 15px) rotate(5deg);
-    }
-    50% {
-        transform: translate(0, 30px) rotate(0deg);
-    }
-    75% {
-        transform: translate(-10px, 15px) rotate(-5deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-}
-
 .paper-deco {
     position: absolute;
     background-color: #fff;
