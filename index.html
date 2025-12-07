@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemilih Distro Dinamis</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS -->
+    <title>Pemilih Distro Linux</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Dekorasi Kertas -->
+    <img src="https://placehold.co/80x40/CC0000/FFFFFF?text=LM" alt="Logo Linux Mint" class="logo-bg" style="top: 10%; left: 15%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/000000/FFFFFF?text=UB" alt="Logo Ubuntu" class="logo-bg" style="top: 25%; right: 20%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/CC0000/FFFFFF?text=FD" alt="Logo Fedora" class="logo-bg" style="bottom: 30%; left: 10%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/000000/FFFFFF?text=AR" alt="Logo Arch" class="logo-bg" style="bottom: 15%; right: 25%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/CC0000/FFFFFF?text=MX" alt="Logo MX Linux" class="logo-bg" style="top: 60%; left: 5%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/000000/FFFFFF?text=DE" alt="Logo Debian" class="logo-bg" style="top: 45%; right: 5%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/CC0000/FFFFFF?text=EL" alt="Logo Elementary OS" class="logo-bg" style="bottom: 45%; left: 35%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/000000/FFFFFF?text=ZL" alt="Logo Zorin OS Lite" class="logo-bg" style="top: 15%; left: 75%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/CC0000/FFFFFF?text=TT" alt="Logo Tails" class="logo-bg" style="bottom: 60%; right: 15%; width: 80px; height: 40px; z-index: 1;">
+    <img src="https://placehold.co/80x40/000000/FFFFFF?text=PL" alt="Logo Pop!_OS" class="logo-bg" style="top: 75%; right: 10%; width: 80px; height: 40px; z-index: 1;">
+    
+    <img src="https://placehold.co/100x50/FFFFFF/CC0000?text=LOGO" alt="Placeholder Logo" id="additional-logo" class="logo-bg" style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 50px; z-index: 1;">
+
     <div class="paper-deco" style="top: 5%; left: 5%; width: 100px; height: 150px; transform: rotate(-10deg);"></div>
     <div class="paper-deco red" style="top: 10%; right: 7%; width: 80px; height: 120px; transform: rotate(15deg);"></div>
     <div class="paper-deco black" style="bottom: 15%; left: 8%; width: 120px; height: 100px; transform: rotate(5deg);"></div>
@@ -16,19 +28,17 @@
     <div class="paper-deco black" style="top: 25%; right: 3%; width: 110px; height: 90px; transform: rotate(-25deg);"></div>
 
     <div class="container">
-        <!-- Halaman 1: Starter Page -->
         <div id="page-1" class="page active">
-            <h1>Pemilih Distro Dinamis</h1>
-            <p>Selamat datang di Pemilih Distro Dinamis!</p>
-            <p>Aplikasi ini dirancang untuk membantu Anda menemukan distribusi Linux yang paling sesuai berdasarkan kebutuhan penggunaan dan spesifikasi perangkat keras Anda.</p>
+            <h1>Pemilih Distro Linux</h1>
+            <p>Selamat datang di Pemilih Distro Linux!</p>
+            <p>Web ini dirancang untuk membantu anda menemukan distribusi Linux yang paling sesuai berdasarkan kebutuhan penggunaan dan spesifikasi perangkat keras anda.</p>
             <button onclick="showPage(2)">Mulai Kuesioner</button>
         </div>
 
-        <!-- Halaman 2: Pertanyaan Kebutuhan 1 -->
         <div id="page-2" class="page">
             <h2>Kebutuhan Penggunaan (1)</h2>
             <form id="question-form-1">
-                <label for="usage-type">Apa tujuan utama Anda menggunakan Linux?</label>
+                <label for="usage-type">Apa tujuan utama anda menggunakan Linux?</label>
                 <select name="usage-type" id="usage-type">
                     <option value="">-- Pilih --</option>
                     <option value="daily-driver">Sebagai sistem operasi utama sehari-hari</option>
@@ -48,11 +58,10 @@
             </form>
         </div>
 
-        <!-- Halaman 3: Pertanyaan Kebutuhan 2 -->
         <div id="page-3" class="page">
             <h2>Kebutuhan Penggunaan (2)</h2>
             <form id="question-form-2">
-                <label for="desktop-experience">Seberapa penting pengalaman desktop yang ramah pengguna bagi Anda?</label>
+                <label for="desktop-experience">Seberapa penting pengalaman desktop yang ramah pengguna bagi anda?</label>
                 <select name="desktop-experience" id="desktop-experience">
                     <option value="">-- Pilih --</option>
                     <option value="very-important">Sangat penting (mudah digunakan, mirip Windows/macOS)</option>
@@ -60,7 +69,7 @@
                     <option value="not-important">Tidak terlalu penting, saya lebih suka kontrol penuh</option>
                 </select>
 
-                <label for="customization-level">Seberapa banyak kustomisasi yang Anda inginkan?</label>
+                <label for="customization-level">Seberapa banyak kustomisasi yang anda inginkan?</label>
                 <select name="customization-level" id="customization-level">
                     <option value="">-- Pilih --</option>
                     <option value="low">Rendah (tampilan dan pengaturan standar)</option>
@@ -72,7 +81,6 @@
             </form>
         </div>
 
-        <!-- Halaman 4: Pertanyaan Kebutuhan 3 -->
         <div id="page-4" class="page">
             <h2>Kebutuhan Penggunaan (3)</h2>
             <form id="question-form-3">
@@ -84,7 +92,7 @@
                     <option value="flexible">Fleksibel, saya tidak keberatan mengganti perangkat keras</option>
                 </select>
 
-                <label for="update-model">Model rilis mana yang Anda sukai?</label>
+                <label for="update-model">Model rilis mana yang anda sukai?</label>
                 <select name="update-model" id="update-model">
                     <option value="">-- Pilih --</option>
                     <option value="stable-lts">Stabil (rilis besar jarang, dukungan panjang)</option>
@@ -96,11 +104,10 @@
             </form>
         </div>
 
-        <!-- Halaman 5: Pertanyaan Hardware 1 -->
         <div id="page-5" class="page">
             <h2>Spesifikasi Perangkat Keras (1)</h2>
             <form id="hardware-form-1">
-                <label for="architecture">Arsitektur prosesor perangkat Anda?</label>
+                <label for="architecture">Arsitektur prosesor perangkat anda?</label>
                 <select name="architecture" id="architecture">
                     <option value="">-- Pilih --</option>
                     <option value="32-bit">32-bit (x86)</option>
@@ -108,7 +115,7 @@
                     <option value="arm">ARM (misalnya, Raspberry Pi, perangkat mobile)</option>
                 </select>
 
-                <label for="ram">Berapa besar RAM (Memori) utama Anda?</label>
+                <label for="ram">Berapa besar RAM (Memori) utama anda?</label>
                 <select name="ram" id="ram">
                     <option value="">-- Pilih --</option>
                     <option value="512">512 MB</option>
@@ -123,7 +130,6 @@
             </form>
         </div>
 
-        <!-- Halaman 6: Pertanyaan Hardware 2 -->
         <div id="page-6" class="page">
             <h2>Spesifikasi Perangkat Keras (2)</h2>
             <form id="hardware-form-2">
@@ -135,7 +141,7 @@
                     <option value="large">Besar (&gt; 20 GB)</option>
                 </select>
 
-                <label for="device-age">Perangkat keras Anda termasuk jenis?</label>
+                <label for="device-age">Perangkat keras anda termasuk jenis?</label>
                 <select name="device-age" id="device-age">
                     <option value="">-- Pilih --</option>
                     <option value="old">Lama (10+ tahun)</option>
@@ -147,11 +153,10 @@
             </form>
         </div>
 
-        <!-- Halaman 7: Pertanyaan Hardware 3 -->
         <div id="page-7" class="page">
             <h2>Spesifikasi Perangkat Keras (3)</h2>
             <form id="hardware-form-3">
-                <label for="gpu-type">Jenis kartu grafis utama Anda?</label>
+                <label for="gpu-type">Jenis kartu grafis utama anda?</label>
                 <select name="gpu-type" id="gpu-type">
                     <option value="">-- Pilih --</option>
                     <option value="integrated">Terintegrasi (Intel HD/UHD, AMD Vega iGPU)</option>
@@ -172,24 +177,22 @@
             </form>
         </div>
 
-        <!-- Halaman 8: Hasil Rekomendasi -->
         <div id="page-8" class="page">
-            <h2>Rekomendasi Distro Anda</h2>
+            <h2>Rekomendasi Distro anda</h2>
             <div id="results-container">
                 <p>Hasil rekomendasi akan muncul di sini...</p>
             </div>
             <button onclick="showPage(1)">Ulangi Kuesioner</button>
-            <button onclick="showPage(9)">Lihat Template</button> <!-- Tombol baru ke halaman 9 -->
+            <button onclick="showPage(9)">Lihat Template</button>
         </div>
 
-        <!-- Halaman 9: Template Kustomisasi -->
         <div id="page-9" class="page">
             <h2>Halaman Template</h2>
-            <p>Ini adalah halaman kosong sebagai contoh template yang bisa Anda kustomisasi.</p>
+            <p>Ini adalah halaman kosong sebagai contoh template yang bisa anda kustomisasi.</p>
             <button onclick="showPage(1)">Kembali ke Awal</button>
         </div>
     </div>
 
-    <script src="script.js"></script> <!-- Link ke file JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
