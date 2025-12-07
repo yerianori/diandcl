@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="paper-deco" style="top: 5%; left: 5%; width: 100px; height: 150px; transform: rotate(-10deg); --delay: 0s;"></div>
-    <div class="paper-deco red" style="top: 10%; right: 7%; width: 80px; height: 120px; transform: rotate(15deg); --delay: 0s;"></div>
-    <div class="paper-deco black" style="bottom: 15%; left: 8%; width: 120px; height: 100px; transform: rotate(5deg); --delay: 0s;"></div>
-    <div class="paper-deco" style="bottom: 5%; right: 10%; width: 90px; height: 140px; transform: rotate(-20deg); --delay: 0s;"></div>
-    <div class="paper-deco red" style="top: 40%; left: 2%; width: 70px; height: 100px; transform: rotate(30deg); --delay: 0s;"></div>
-    <div class="paper-deco black" style="top: 25%; right: 3%; width: 110px; height: 90px; transform: rotate(-25deg); --delay: 0s;"></div>
+    <div class="paper-deco" style="top: 5%; left: 5%; width: 100px; height: 150px; transform: rotate(-10deg);" data-delay="0"></div>
+    <div class="paper-deco red" style="top: 10%; right: 7%; width: 80px; height: 120px; transform: rotate(15deg);" data-delay="2"></div>
+    <div class="paper-deco black" style="bottom: 15%; left: 8%; width: 120px; height: 100px; transform: rotate(5deg);" data-delay="4"></div>
+    <div class="paper-deco" style="bottom: 5%; right: 10%; width: 90px; height: 140px; transform: rotate(-20deg);" data-delay="6"></div>
+    <div class="paper-deco red" style="top: 40%; left: 2%; width: 70px; height: 100px; transform: rotate(30deg);" data-delay="8"></div>
+    <div class="paper-deco black" style="top: 25%; right: 3%; width: 110px; height: 90px; transform: rotate(-25deg);" data-delay="10"></div>
 
     <div class="container">
         <div id="page-1" class="page active">
@@ -170,7 +170,7 @@
                 <p>Hasil rekomendasi akan muncul di sini...</p>
             </div>
             <button onclick="showPage(1)">Ulangi Kuesioner</button>
-            <button onclick="showPage(9)">Selanjutnya</button>
+            <button onclick="showPage(9)">Lihat Template</button>
         </div>
 
         <div id="page-9" class="page">
@@ -180,6 +180,16 @@
         </div>
     </div>
 
+    <script>
+        const paperDecos = document.querySelectorAll('.paper-deco');
+        
+        paperDecos.forEach(deco => {
+            const delayValue = deco.getAttribute('data-delay');
+            if (delayValue !== null) {
+                deco.style.setProperty('--random-delay', delayValue);
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
